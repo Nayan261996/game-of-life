@@ -12,8 +12,13 @@ pipeline {
             }
         }
         stage('path'){
+            steps {
+                sh 'sudo su -'
+            }
+        }
+        stage('path'){
             steps { 
-                 'cd /mnt/webserver/apache-tomcat-9.0.67/bin/'
+                sh 'cd /mnt/webserver/apache-tomcat-9.0.67/bin/'
             }
         }
         stage('start-tomcat'){
