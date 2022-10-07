@@ -1,6 +1,6 @@
 pipeline {
     agent { label 'QA' }
-    stages('deploy-war'){
+    stages('GOL'){
         stage('permission'){
             steps { 
                 sh 'sudo su -'
