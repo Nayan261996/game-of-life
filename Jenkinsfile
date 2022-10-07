@@ -13,7 +13,7 @@ pipeline {
         }
         stage('path'){
             steps { 
-                sh 'cd /mnt/webserver/apache-tomcat-9.0.67/bin'
+                 'cd /mnt/webserver/apache-tomcat-9.0.67/bin/'
             }
         }
         stage('start-tomcat'){
