@@ -11,7 +11,7 @@ pipeline {
                 sh 'aws s3 cp s3://velpproj/gameoflife.war /mnt/webserver/apache-tomcat-9.0.68/webapps'
             }
         }
-        stage('path'){
+        stage('permi'){
             steps {
                 sh 'sudo su -'
             }
